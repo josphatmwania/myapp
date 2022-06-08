@@ -1,71 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-    xmlns:android="http://schemas.android.com/tools">
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+      android:padding="48dp"
+       android:layout_marginTop="8dp"
        android:orientation="vertical">
 
-      <EditText
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-         android:hint="Contact Name"
-         android:id="@+id/edit_text_contact_name">
-
-      </EditText>
-
-      <EditText
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:hint="Contact Name"
-          android:id="@+id/edit_text_contact_name">
-
-      </EditText>
-
-      <EditText
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:hint="Contact Number"
-          android:id="@+id/edit_text_contact_number">
-
-      </EditText>
-
-      <EditText
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:hint="My Display Name"
-          android:id="@+id/edit_text_my_display_name">
-
-      </EditText>
-
-      <CheckBox
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-         android:text="Include Junior"
-          android:id="@+id/check_box_junior">
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:hint="Contact Name"
+      android:minHeight="48dp"
+       android:layout_marginTop="8dp"
+    android:id="@+id/contact_name" />
 
 
-      </CheckBox>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Contact Number"
+       android:minHeight="48dp"
+       android:layout_marginTop="8dp"
+       android:id="@+id/contact_number" />
 
-      <Spinner
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-         tools:listitem="@android:layout/simple_list_item_1">
 
-      </Spinner>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="My Display Name"
+       android:minHeight="48dp"
+       android:layout_marginTop="8dp"
+       android:id="@+id/display_name" />
+   <CheckBox
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="Include 'Junior'"
+       android:layout_marginTop="8dp"
+       android:id="@+id/check_box_junior"/>
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      tools:listitem="@android:layout/simple_list_item_1"
+       android:layout_marginTop="8dp"
+       android:id="@+id/spinner_job_title"/>
 
-      <EditText
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-         android:hint="Available from date"
-         android:id="@+id/edit_text_start_date">
+   <CheckBox
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="Immediate Start"
+       android:layout_marginTop="8dp"
+       android:id="@+id/check_box_immediate_start"/>
 
-      </EditText>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Available from date"
+       android:layout_marginTop="8dp"
+       android:id="@+id/edit_text_start_date"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:hint="Preview Message"
+       style="@android:style/Widget.Material.Button.Colored"
+      android:id="@+id/button_preview"/>
+
+
+
 
 
 
@@ -73,5 +80,6 @@
 
 
 </ScrollView>
+
 
 
