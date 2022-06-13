@@ -3,6 +3,7 @@ package com.myprojects.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         val previewButton: Button = findViewById(R.id.button_preview)
         previewButton.setOnClickListener {
+
+            Toast.makeText(this, "My button works!", Toast.LENGTH_SHORT).show()
 
         }
 
