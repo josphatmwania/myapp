@@ -11,10 +11,23 @@ import com.google.android.material.textfield.TextInputEditText
 
 
 class MainActivity : AppCompatActivity() {
+
+
+//    private var contactEditText = TextInputEditText(contactEditText)? = null
+//      private var contactEditText = TextInputEditText? = null
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-// declare fixed values variable of type button and assign it to findViewById
+        setContentView(R.layout.activity_main);
+
+//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
+//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
+//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
+//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
+
+
 
         val previewButton: Button = findViewById(R.id.button_preview)
         previewButton.setOnClickListener {
