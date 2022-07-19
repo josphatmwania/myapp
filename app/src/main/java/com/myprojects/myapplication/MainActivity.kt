@@ -1,53 +1,43 @@
 package com.myprojects.myapplication
-//package arb.test.text.input.layout
 
 
 
+//import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.Toast
-import com.google.android.material.textfield.TextInputEditText
+import com.myprojects.myapplication.databinding.ActivityMainBinding
+
 
 
 class MainActivity : AppCompatActivity() {
 
-
-//    private var contactEditText = TextInputEditText(contactEditText)? = null
-//      private var contactEditText = TextInputEditText? = null
-
+    private lateinit var binding: ActivityMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main);
-
-//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
-//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
-//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
-//        contactEditText = findViewById<TextInputEditText>(R.id.contact_name)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
 
 
-        val previewButton: Button = findViewById(R.id.button_preview)
-        previewButton.setOnClickListener {
 
-//            Toast.makeText(this, "My button works!", Toast.LENGTH_SHORT).show()
 
-            onPreviewClicked()
+
+
+
+
+
+
+
+
+
+
 
 
         }
 
     }
 
-    private fun onPreviewClicked() {
-        val contactEditText = findViewById<TextInputEditText >(R.id.contact_name)
-        val contactNumberText = findViewById<TextInputEditText>(R.id.contact_number)
-        val testString = contactEditText.text.toString() + ", " + contactNumberText.text.toString()
-        Toast.makeText(this, testString, Toast.LENGTH_SHORT).show()
 
-
-
-    }
-}
