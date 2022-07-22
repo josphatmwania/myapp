@@ -5,6 +5,7 @@ package com.myprojects.myapplication
 //import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.myprojects.myapplication.databinding.ActivityMainBinding
 
 
@@ -19,24 +20,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
 
