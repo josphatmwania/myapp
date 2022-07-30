@@ -11,9 +11,18 @@
        android:layout_marginTop="8dp"
        android:orientation="vertical">
 
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="?attr/actionBarSize"/>
+
+
       <com.google.android.material.textfield.TextInputLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
+
 
          <com.google.android.material.textfield.TextInputEditText
              android:layout_width="match_parent"
