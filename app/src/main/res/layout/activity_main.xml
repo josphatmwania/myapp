@@ -19,77 +19,77 @@
           android:minHeight="?attr/actionBarSize"/>
 
 
-<!--      <com.google.android.material.textfield.TextInputLayout-->
-<!--          android:id="@+id/inputLayoutName"-->
-<!--          android:layout_width="match_parent"-->
-<!--          android:layout_height="wrap_content"-->
-<!--          android:layout_marginTop="30dp">-->
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/inputLayoutName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp">
 
-<!--         <com.google.android.material.textfield.TextInputEditText-->
-<!--             android:id="@+id/etName"-->
-<!--             android:layout_width="match_parent"-->
-<!--             android:layout_height="wrap_content"-->
-<!--             android:hint="Your Name"-->
-<!--             android:minHeight="48dp"-->
-<!--             android:layout_marginTop="8dp"/>-->
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/etName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Your Name"
+             android:minHeight="48dp"
+             android:layout_marginTop="8dp"/>
 
-<!--      </com.google.android.material.textfield.TextInputLayout>-->
-<!--      <Button-->
-<!--          android:layout_width="match_parent"-->
-<!--          android:layout_height="wrap_content"-->
-<!--          android:onClick="saveName"-->
-<!--          android:text="string/btn_save_name"/>-->
+      </com.google.android.material.textfield.TextInputLayout>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="saveName"
+          android:text="string/btn_save_name"/>
 
-<!--      <com.google.android.material.textfield.TextInputEditText-->
-<!--          android:id="@+id/inputLayoutRepoName"-->
-<!--          android:layout_width="match_parent"-->
-<!--          android:layout_height="wrap_content"-->
-<!--          android:layout_marginTop="30dp">-->
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/inputLayoutRepoName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp">
 
-<!--         <EditText-->
-<!--             android:id="@+id/etRepoName"-->
-<!--             android:layout_width="match_parent"-->
-<!--             android:layout_height="wrap_content"-->
-<!--             android:hint="string/et_repository_search"/>-->
+         <EditText
+             android:id="@+id/etRepoName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="string/et_repository_search"/>
 
-<!--      </com.google.android.material.textfield.TextInputEditText>-->
+      </com.google.android.material.textfield.TextInputEditText>
 
-<!--      <com.google.android.material.textfield.TextInputEditText-->
-<!--          android:id="@+id/inputLayoutLanguage"-->
-<!--          android:layout_width="match_parent"-->
-<!--          android:layout_height="wrap_content">-->
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/inputLayoutLanguage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
 
-<!--         <EditText-->
-<!--             android:id="@+id/etLanguage"-->
-<!--             android:layout_width="match_parent"-->
-<!--             android:layout_height="wrap_content"-->
-<!--             android:hint="string/et_language"/>-->
-<!--      </com.google.android.material.textfield.TextInputEditText>-->
+         <EditText
+             android:id="@+id/etLanguage"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="string/et_language"/>
+      </com.google.android.material.textfield.TextInputEditText>
 
-<!--      <Button-->
-<!--          android:layout_width="match_parent"-->
-<!--          android:layout_height="wrap_content"-->
-<!--          android:onClick="listRepositories"-->
-<!--          android:text="search_repositories"/>-->
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="listRepositories"
+          android:text="search_repositories"/>
 
-<!--      <com.google.android.material.textfield.TextInputEditText-->
-<!--          android:id="@+id/inputLayoutGithubUser"-->
-<!--          android:layout_width="match_parent"-->
-<!--          android:layout_height="wrap_content"-->
-<!--          android:layout_marginTop="30dp">-->
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/inputLayoutGithubUser"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp">
 
-<!--         <EditText-->
-<!--             android:id="@+id/etGithubUser"-->
-<!--             android:layout_width="match_parent"-->
-<!--             android:layout_height="wrap_content"-->
-<!--             android:hint="github_username"/>-->
+         <EditText
+             android:id="@+id/etGithubUser"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="github_username"/>
 
-<!--      </com.google.android.material.textfield.TextInputEditText>-->
-<!--      <Button-->
-<!--          android:layout_width="match_parent"-->
-<!--          android:layout_height="wrap_content"-->
-<!--          android:onClick="listUserRepositories"-->
-<!--          android:text="search_github_user"/>-->
+      </com.google.android.material.textfield.TextInputEditText>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="listUserRepositories"
+          android:text="search_github_user"/>
 
    </LinearLayout>
 
