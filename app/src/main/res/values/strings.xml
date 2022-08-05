@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="select_language_optional">Select Language(Optional)</string>
-    <string name="Save_Name">Save Name()</string>
-    <string name="Search_Repository">Search Repository()</string>
+    <string name="Save_Name">Save Name</string>
+    <string name="Search_Repositories">Search Repository</string>
+    <string name="github_Username">Github Username</string>
+
 
 </resources>

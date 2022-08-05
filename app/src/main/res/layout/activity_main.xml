@@ -37,22 +37,53 @@
           android:id="@+id/button"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
+          android:onClick="saveName"
           android:text="@string/Save_Name" />
 
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
-          android:hint="@string/Search_Repository"
+          android:hint="@string/Search_Repositories"
           android:layout_height="wrap_content"
           android:layout_marginTop="30dp">
 
-      <TextView
-          android:id="@+id/inputLayoutRepoName"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"/>
       </com.google.android.material.textfield.TextInputEditText>
+
+      <com.google.android.material.textfield.TextInputEditText
+         android:id="@+id/inputLayoutLanguage"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/select_language_optional">
+
+      </com.google.android.material.textfield.TextInputEditText>
+
+      <Button
+          android:id="@+id/button2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:onClick="listRepositories"
+          android:text="@string/Search_Repositories" />
+
+
+
+      <com.google.android.material.textfield.TextInputEditText
+         android:id="@+id/inputLayoutGithubUser"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="@string/github_Username"
+         android:layout_margin="30dp">
+
+      </com.google.android.material.textfield.TextInputEditText>
+
+       <Button
+          android:id="@+id/button3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+           android:onClick="listUserRepositories"
+          android:text="Search Github User Repositories" />
 
 
    </LinearLayout>
+
 
 </ScrollView>
 
