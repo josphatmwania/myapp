@@ -4,6 +4,8 @@
     <string name="Save_Name">Save Name</string>
     <string name="Search_Repositories">Search Repository</string>
     <string name="github_Username">Github Username</string>
+    <string name="Search_Github_User_Repositories">Search Github User Repositories</string>
+
 
 
 </resources>

@@ -44,14 +44,16 @@
           android:layout_width="match_parent"
           android:hint="@string/Search_Repositories"
           android:layout_height="wrap_content"
-          android:layout_marginTop="30dp">
+          android:layout_marginTop="30dp"
+          android:id="@+id/etRepoName">
+
 
       </com.google.android.material.textfield.TextInputEditText>
 
       <com.google.android.material.textfield.TextInputEditText
-         android:id="@+id/inputLayoutLanguage"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
+         android:id="@+id/etLanguage"
          android:hint="@string/select_language_optional">
 
       </com.google.android.material.textfield.TextInputEditText>
@@ -75,11 +77,11 @@
       </com.google.android.material.textfield.TextInputEditText>
 
        <Button
-          android:id="@+id/button3"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
            android:onClick="listUserRepositories"
           android:text="Search Github User Repositories" />
+
 
 
    </LinearLayout>

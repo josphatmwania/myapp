@@ -3,8 +3,10 @@ package com.myprojects.myapplication
 
 
 //import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Display
 import android.view.View
 import android.widget.Toast
 import com.myprojects.myapplication.databinding.ActivityMainBinding
@@ -33,7 +35,12 @@ class MainActivity : AppCompatActivity() {
 //    Search repositories on github method after passing data to DisplayActivity
 
     fun listRepositories(view: View) {
-//        etRepo
+        val queryRepo = etRepoName.text.toString()
+        val repoLanguage = etLanguage.text.toString()
+
+        val intent = Intent(this, DisplayActivity::class.java)
+        startActivity(intent)
+
 
     }
 
