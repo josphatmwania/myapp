@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Display
 import android.view.View
-import android.widget.Toast
+//import android.widget.Toast
 import com.myprojects.myapplication.databinding.ActivityMainBinding
 
 
@@ -35,16 +35,23 @@ class MainActivity : AppCompatActivity() {
 //    Search repositories on github method after passing data to DisplayActivity
 
     fun listRepositories(view: View) {
-        val queryRepo = etRepoName.text.toString()
-        val repoLanguage = etLanguage.text.toString()
+        val queryRepo = binding.etRepoName.text.toString()
+        val repoLanguage = binding.etLanguage.text.toString()
 
-        val intent = Intent(this, DisplayActivity::class.java)
+        val intent = Intent(this@MainActivity, Display::class.java)
+
+//        Passing queryRepo & repoLanguage to our activity
+
+        intent.putExtra(Constants.KEY_REPO_SEARCH, queryRepo)
+        intent.putExtra(Constants.KEY_LANGUAGE, repoLanguage)
+        intent.putExtra(Constants.KEY_QUERY_TYPE, Constants.SEARCH_BY_REPO)
         startActivity(intent)
 
 
     }
 
 //    Search repos of a particular github user method after passing data to DisplayActivity
+
     fun listUserRepositories(view: View) {
 
     }

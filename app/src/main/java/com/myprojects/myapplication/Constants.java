@@ -1,5 +1,4 @@
-package com.sriyank.javatokotlindemo.app;
-
+package com.myprojects.myapplication;
 
 public class Constants {
 
