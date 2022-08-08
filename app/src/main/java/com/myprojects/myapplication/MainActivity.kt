@@ -10,7 +10,7 @@ import android.view.Display
 import android.view.View
 //import android.widget.Toast
 import com.myprojects.myapplication.databinding.ActivityMainBinding
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -53,6 +53,13 @@ class MainActivity : AppCompatActivity() {
 //    Search repos of a particular github user method after passing data to DisplayActivity
 
     fun listUserRepositories(view: View) {
+        val githubUser = etGithubUser.text.toString()
+
+        val intent = Intent(this@MainActivity, Display::class.java)
+        intent.putExtra(Constants.KEY_QUERY_TYPE, Constants.SEARCH_BY_USER)
+        intent.putExtra(Constants.KEY_GITHUB_USER, githubUser)
+        startActivity(intent)
+
 
     }
 
